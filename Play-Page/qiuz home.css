@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Russo+One&display=swap');
+*{	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+html
+{
+	font-size:62.5%;
+}
+#main
+{
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	place-items:center;
+	background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+}
+#cen
+{
+	background-color: #EAEAEA;
+	padding:40px;
+	height: auto;
+	width: 383px;
+	float:left;
+	border-radius: 30px;
+	box-shadow: 0px -1px 8px 3px rgba(0,0,0,0.59);
+-webkit-box-shadow: 0px -1px 8px 3px rgba(0,0,0,0.59);
+-moz-box-shadow: 0px -1px 8px 3px rgba(0,0,0,0.59);
+}
+#hold
+{
+	height:auto;
+	width: 300px;
+	float: left;
+	background-color: #EAEAEA;
+	
+}
+
+#photo
+{
+	height: 300px;
+	width: 300px;
+	float: left;
+	border: 5px solid white;
+	border-radius: 30px;
+	background:url(img/icon%201.png);
+	background-size:100% 100%;
+}
+#text
+{
+	height: 60px;
+	width: 300px;
+	float: left;
+	text-align: center;
+	font-size: 5rem;
+	margin-top: 9px;
+	font-weight: 580;
+	font-family: 'Montserrat', sans-serif;	
+}
+#buttondiv
+{
+	height: 60px;
+	width: 300px;
+	float: left;
+	display: grid;
+	place-items:center;
+	margin-top: 10px;
+}
+#button
+{
+	height: 61px;
+	width: 206px;
+	border-radius: 20px;
+	background-color: #fff000;
+	float: left;
+	font-size: 4rem;
+	font-weight: 600;
+	font-family: 'Russo One', sans-serif;
+	margin-right:5px;
+  	color: #000;
+  	margin-top: 3px;
+   -webkit-transition: all .15s ease-out;
+   transition: all .15s ease-out;
+}
+#button:hover {
+  box-shadow: 0 0 10px 0 #fff000 inset, 0 0 20px 2px #fff000;
+  border: 3px solid #fff000;
+  background-color:#fff;
+  cursor: pointer;
+
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+}
+
+.text {
+    color:#6C6C6C;
+    font-size: 5rem;
+	font-weight:600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   font-family: 'Montserrat', sans-serif;	
+}
+.overlayFade{
+    height: 100%;
+    width:100%;
+    top:0;
+    left:0;
+    background-color:#F0F8FF;
+	border-radius:23px;
+	border: 2px solid white;
+
+}
+.overlay {
+    position: absolute;
+    opacity: 0;
+    transition:all .3s ease;
+    background-color: #F0F8FF;
+}
+.container:hover .overlay,.container:hover .overlayFade {
+    opacity: 1;
+    cursor: pointer;
+}
